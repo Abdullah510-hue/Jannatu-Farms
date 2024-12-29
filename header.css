@@ -1,0 +1,101 @@
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  height: 90px;
+  border-radius: 45px;
+  margin-top: 0;
+}
+
+.org-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+ /* align-items: center;*/
+  justify-content: space-between;
+  background-color: #578fee;
+  color: white;
+  padding: 5px 10px;
+  z-index: 1000;
+  font-size: 20px;
+}
+
+header img {
+  height: 50px;
+}
+
+header .org-name {
+  margin-left: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #34495e;
+  border-radius: 5px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: #2c3e50;
+      position: absolute;
+      right: 20px;
+      top: 60px;
+      width: 200px;
+      border-radius: 5px;
+  }
+
+  nav ul.show {
+      display: flex;
+  }
+
+  .hamburger {
+      display: block;
+      color: white;
+  }
+}
+
+

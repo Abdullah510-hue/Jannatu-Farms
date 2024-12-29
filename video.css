@@ -1,0 +1,43 @@
+#videos {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+#videos h2 {
+  text-align: center;
+  color: #333;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.video-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.video-item {
+  flex: 1 1 1;
+  margin: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-item iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.video-description {
+  color: #555;
+  font-size: 14px;
+}
+

@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(77, 89, 250);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+/* this is the code for the image slider */
+.column img {
+  width: 150px; /* Fixed width for all images */
+  height: 150px; /* Fixed height for all images */
+  object-fit: cover; /* Ensures the image fills the box without distortion */
+  display: block; /* Centers the image in its container */
+  margin: 0 auto; /* Centers the image horizontally */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for aesthetics */
+}
+
+.row {
+  display: flex; /* Aligns the columns in a row */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  justify-content: space-around; /* Adds spacing between columns */
+  gap: 10px; /* Consistent spacing between columns */
+  padding: 10px; /* Adds padding around the row */
+}
+
+.column {
+  flex: 1 1 calc(16.66% - 20px); /* Makes columns flexible */
+  max-width: 20%; /* Limits the maximum width of each column */
+  box-sizing: border-box; /* Ensures padding and borders are included in the size */
+}
+
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.mySlides {
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  width: 600px; /* Fixed width */
+  height: 400px; /* Fixed height */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  box-sizing: border-box; /* Ensure consistent sizing */
+}
+
+.mySlidesImages {
+  width: 600px; /* Fixed width */
+  height: 400px; /* Fixed height */
+  margin-left: 300px;
+  object-fit: contain; /* Ensures the image fills the box without distortion */
+}
+
